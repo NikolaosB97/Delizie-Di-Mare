@@ -1,0 +1,540 @@
+/* INIZIO INFORMAZIONI GENERALI */
+.meddon-regular {
+  font-family: "Meddon", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.pt-serif-regular {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.transparent-bg {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease;
+}
+.solid-bg {
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.navbar-collapse.show {
+  background-color: white;
+  padding: 1rem;
+}
+.text-color{
+color: black;
+}
+.table-container {
+opacity: 0;
+transform: translateY(50px);
+transition: opacity 3s ease-out, transform 3s ease-out;
+}
+
+.table-container.visible {
+opacity: 1;
+transform: translateY(0);
+}
+.hero-image{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Copre l'intera area mantenendo le proporzioni */
+  z-index: -1; /* Mette il video sotto altri contenuti */
+  pointer-events: none; /* Impedisce l'interazione con il video */
+}
+
+/* Media query per schermi molto grandi */
+@media (min-width: 1600px) {
+.navbar-brand {
+    font-size: 7em; /* Ingrandisce il nome del brand */
+}
+.navbar-nav .nav-link {
+    font-size: 2.5em; /* Ingrandisce i link della navbar */
+    padding: 1rem; /* Aumenta il padding per i link */
+}
+.navbar-collapse.show {
+    padding: 2rem; /* Aumenta il padding per la navbar quando è espansa */
+}
+.navbar {
+    padding: 1.5rem 2rem; /* Aumenta il padding generale della navbar */
+}
+.navbar-brand img {
+    width: 400px; /* Modifica la larghezza del logo */
+    height: auto; /* Mantiene le proporzioni del logo */
+}
+}
+
+
+/* FINE INFORMAZIONI GENERALI */
+/* INIZIO HEADER */
+
+/* Imposta lo sfondo per essere sempre coprente e centrato */
+.hero-image {
+background-size: cover;
+background-repeat: no-repeat;
+height: 100vh; /* Regola l'altezza a tuo piacimento */
+background-blend-mode: multiply; /* Aggiunge l'effetto di blend */
+background-color: rgba(0, 0, 0, 0.4); /* Colore scuro con opacità per l'effetto di oscuramento */
+}
+
+/* Stili base per i titoli */
+.home-header {
+font-family: "Meddon", cursive;
+color:#103a6d;
+font-size: 3rem; /* Parti da una dimensione grande per schermi larghi */
+text-align: center;
+margin-top: 50px;
+}
+
+.home-header-pt {
+font-family: "PT Serif", serif;
+font-size: 4rem; /* Dimensione ancora più grande, adatta a piacimento */
+color: white;
+}
+
+/* Posizionamento e trasformazione del testo */
+
+
+/* Media queries per adattare le dimensioni del testo sui dispositivi più piccoli */
+@media (max-width: 991px) {
+  .home-header {
+    font-size: 2.5rem; /* Riduci la dimensione per tablet */
+  }
+  .home-header-pt {
+    font-size: 3.5rem; /* Riduci la dimensione per tablet */
+  }
+  .hero-image {
+    height: 65vh; /* Potrebbe essere necessario ridurre l'altezza per i tablet */
+  }
+  .hero-text {
+    top: 55%; /* Aumenta se necessario per spostare il testo verso il basso */
+    position: relative;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-header {
+    font-size: 2rem; /* Riduci ulteriormente la dimensione per dispositivi mobili */
+  }
+  .home-header-pt {
+    font-size: 2.5rem; /* Riduci ulteriormente la dimensione per dispositivi mobili */
+  }
+  .hero-image {
+    height: 55vh; /* Potrebbe essere necessario ridurre ulteriormente l'altezza per i dispositivi mobili */
+  }
+  .hero-text {
+    top: 55%; /* Continua ad aggiustare finché non è al di sotto della navbar */
+    position: relative;
+  }
+}
+
+@media (max-width: 576px) {
+  .home-header {
+    font-size: 1.5rem; 
+  }
+  .home-header-pt {
+    font-size: 1rem; 
+  }
+
+  .hero-text {
+    margin-top: -35px;
+    
+  }
+
+  }
+
+/* FINE HEADER */
+/* INIZIO SESSIONE STORY */
+.story-section {
+padding: 4rem 0; /* Aggiungi spazio sopra e sotto */
+}
+
+.story-section h2 {
+font-size: 2rem; /* o la dimensione desiderata */
+color: black; /* o il colore del tema */
+font-family: "PT Serif", serif;
+  font-size: 2rem; /* Dimensione ancora più grande, adatta a piacimento */
+
+
+}
+
+.story-section p {
+font-size: 1rem; /* o la dimensione desiderata */
+color: #666; /* o il colore del testo desiderato */
+line-height: 1.5; /* Spaziatura delle righe per una migliore leggibilità */
+}
+
+.story-section .btn-primary {
+background-color: #24aaf3; /* Colore del pulsante */
+border-color: #24aaf3; /* Colore del bordo del pulsante */
+color: white; /* Colore del testo del pulsante */
+/* Altri stili del pulsante come necessario */
+}
+
+.custom-a{
+border-bottom: 1px solid #24aaf3 ;
+color:#24aaf3;
+font-family: "PT Serif", serif;
+font-size: 1rem; /* Dimensione ancora più grande, adatta a piacimento */
+text-decoration: none;
+
+}
+
+/* Responsività per tablet */
+@media (max-width: 991px) {
+.story-section .btn-primary {
+  padding: .5rem 1rem; /* Pulsante più piccolo per adattarsi meglio ai tablet */
+  font-size: .8rem; /* Riduzione della dimensione del testo sul pulsante */
+}
+}
+
+/* Responsività per dispositivi mobili */
+@media (max-width: 768px) {
+.story-section {
+  padding: 1rem .5rem; /* Minore spaziatura per una visualizzazione più ristretta */
+}
+
+.story-section h2 {
+  font-size: 1.5rem; /* Riduci ulteriormente la dimensione del testo */
+  margin-bottom: .5rem; /* Minore spazio sotto l'intestazione */
+}
+
+/* Adattamenti per la colonna dell'immagine */
+.story-section .col-lg-6 {
+  display: block; /* Mostra la colonna se precedentemente nascosta */
+  max-width: 100%; /* Usa la massima larghezza disponibile */
+  margin-bottom: 1rem; /* Aggiungi spazio sotto l'immagine */
+}
+
+.story-section img {
+  width: 100%; /* Le immagini devono essere a larghezza piena */
+  height: auto; /* Mantieni l'altezza automatica per conservare le proporzioni */
+}
+}
+
+/* Responsività per schermi molto piccoli come quelli di smartphone */
+@media (max-width: 576px) {
+.story-section {
+  padding: .5rem; /* Ancora minore spaziatura per schermi molto piccoli */
+}
+
+.story-section h2 {
+  font-size: 1.25rem; /* Ulteriore riduzione della dimensione del testo */
+}
+
+.story-section .btn-primary {
+  padding: .4rem .8rem; /* Riduci il padding del pulsante */
+  font-size: .75rem; /* Diminuisci la dimensione del testo sul pulsante */
+}
+
+/* Se vuoi mostrare l'immagine su schermi molto piccoli */
+.story-section .col-lg-6 {
+  display: block; /* Assicurati che l'immagine sia visibile */
+  padding: 0; /* Rimuovi padding se presente */
+}
+
+}
+/* Stile di base per l'immagine principale */
+/* Stile di base per l'immagine */
+.story-image img {
+max-width: 100%;
+max-height: 500px;
+position: relative;
+}
+
+/* Stile per l'immagine decorativa, per mantenerla nella posizione desiderata */
+.decorative-image {
+position: absolute;
+top: 7px;
+right: 17px; /* Posizionala in alto a destra */
+width: auto; /* Mantieni la larghezza originale dell'immagine */
+height: auto; /* Mantieni l'altezza originale dell'immagine */
+width: 150px; /* Imposta una larghezza massima per grandi schermi */
+}
+
+/* Media query per dispositivi più piccoli */
+
+
+@media (max-width: 576px) {
+.decorative-image {
+  display: none;
+}
+}
+
+/* FINE SESSIONE STORY */
+
+
+
+
+/* <!-- inizio sessione relax e benessere --> */
+.relax-img{
+background-size: cover;
+background-position: center;
+text-align: center;
+height: 500px; 
+display: flex;
+justify-content: center;
+align-items: center;
+background-blend-mode: multiply; /* Aggiunge l'effetto di blend */
+background-color: rgba(0, 0, 0, 0.4); /* Colore scuro con opacità per l'effetto di oscuramento */
+
+}
+.relax-text {
+text-align: right;
+margin-right: -90px;
+padding: 0px;
+float: right;
+}
+.pt-serif-p{
+font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Stili per tablet */
+@media (max-width: 768px) {
+.relax-img {
+  height: 350px; 
+}
+
+.relax-text {
+  text-align: center; 
+}
+}
+
+/* Stili per mobile */
+@media (max-width: 480px) {
+.relax-img {
+  background-size: cover; /* Copre l'intera area disponibile */
+  background-position: center; /* Centra l'immagine */
+  height: auto; /* Permette all'altezza di adattarsi al contenuto */
+  max-height: 300px; /* Imposta un'altezza minima */
+  background-repeat: no-repeat;
+}
+
+.relax-text {
+  font-size: 10px; 
+  text-align: center; 
+  
+}
+}
+/* <!-- fine sessione relax e benessere --> */
+/* Fine sessione prenota il tuo tavolo */
+/* Fine sessione prenota il tuo tavolo */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* inizio footer */
+/* Stile generale del footer */
+footer {
+padding: 20px;
+background-color: #f8f9fa; /* bg-body-tertiary */
+color: #6c757d; /* text-muted */
+}
+
+footer .section {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+footer .section .container {
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+footer .section .row {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin: 20px 0;
+}
+
+footer .section .col {
+flex: 1;
+min-width: 200px;
+margin: 10px;
+text-align: center; /* Centra il testo in ogni colonna */
+}
+
+footer .section h6 {
+font-weight: bold;
+margin-bottom: 15px;
+}
+
+footer .section p {
+margin: 0 0 10px;
+}
+
+footer .section a {
+color: inherit;
+text-decoration: none;
+}
+
+footer .section a:hover {
+text-decoration: underline;
+}
+
+footer .social-media {
+margin: 20px 0;
+text-align: center;
+}
+
+footer .social-media a {
+margin: 0 10px; /* Ridotto margine per schermi più piccoli */
+color: #c7ab57;
+display: inline-block; /* Assicura che le icone siano in linea */
+}
+
+footer .social-media a:hover {
+color: #6c757d;
+}
+
+/* Design responsive */
+@media (max-width: 768px) {
+footer .section .row {
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .section .col {
+    min-width: 100%;
+}
+}
+
+@media (max-width: 480px) {
+footer .section .row {
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .section .col {
+    min-width: 100%;
+    text-align: center;
+}
+
+footer .section p {
+    word-break: break-word; /* Evita che il testo esca dal container */
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+}
+/* Design per schermi molto grandi */
+@media (min-width: 1600px) {
+footer {
+    padding: 60px 100px; /* Aumenta il padding per schermi molto grandi */
+}
+
+footer .section {
+    flex-direction: row; /* Dispone le sezioni in fila */
+    justify-content: space-between; /* Spazia le sezioni */
+    text-align: left; /* Allinea il testo a sinistra */
+}
+
+footer .section .container {
+    max-width: 2200px; /* Aumenta la larghezza del container */
+}
+
+footer .section .row {
+    display: flex;
+    flex-wrap: nowrap; /* Impedisce il wrap delle colonne */
+    justify-content: space-between; /* Spazia le colonne */
+}
+
+footer .section .col {
+    flex: 0 0 30%; /* Aumenta la larghezza delle colonne */
+    margin: 20px; /* Aumenta il margine tra le colonne */
+    text-align: left; /* Allinea il testo a sinistra */
+}
+
+footer .section h6 {
+    font-size: 2.5em; /* Aumenta la dimensione del font per i titoli */
+    margin-bottom: 20px; /* Aumenta lo spazio sotto i titoli */
+}
+
+footer .section p {
+    font-size: 1.9em; /* Aumenta la dimensione del font per i paragrafi */
+}
+
+footer .social-media {
+    margin: 90px 0; /* Aumenta il margine per la sezione social media */
+    display: flex;
+    justify-content: center; /* Centra le icone social */
+}
+
+footer .social-media a {
+    margin: 0 20px; /* Aumenta il margine tra le icone social */
+    font-size: 2em; /* Aumenta la dimensione delle icone social */
+}
+}
+/* fine footer */
+
+
+@media (max-width: 991px) {
+}
+.footer-text-i{
+font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #24aaf3;
+}
+
+.social-media {
+margin: 20px 0;
+text-align: center;
+}
+
+.social-media a {
+margin: 0 10px; /* Ridotto margine per schermi più piccoli */
+color: #c7ab57;
+display: inline-block; /* Assicura che le icone siano in linea */
+}
+
+.social-media a:hover {
+color: #6c757d;
+}
+
+/* Media query per schermi molto grandi */
+@media (min-width: 2560px) {
+/* Ingrandisce i testi della sezione story */
+.story-section h2 {
+    font-size: 4rem; /* Ingrandisce i titoli */
+}
+.story-section p {
+    font-size: 2rem; /* Ingrandisce il testo dei paragrafi */
+}
+
+/* Ingrandisce i bottoni */
+.btn-primary, .btn-mare {
+    font-size: 2rem; /* Ingrandisce il testo dei bottoni */
+    padding: 20px 40px; /* Aumenta il padding dei bottoni */
+}
+
+/* Ingrandisce altri testi specifici */
+.home-header {
+    font-size: 5rem; /* Ingrandisce il testo dell'intestazione */
+}
+.home-header-pt {
+    font-size: 6rem; /* Ingrandisce il testo dell'intestazione */
+}
+}
+

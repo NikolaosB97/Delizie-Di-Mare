@@ -1,0 +1,485 @@
+/* INIZIO INFORMAZIONI GENERALI */
+.meddon-regular {
+  font-family: "Meddon", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.pt-serif-regular {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.transparent-bg {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease;
+}
+.solid-bg {
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.navbar-collapse.show {
+  background-color: white;
+  padding: 1rem;
+}
+.text-color{
+color: black;
+}
+.table-container {
+opacity: 0;
+transform: translateY(50px);
+transition: opacity 3s ease-out, transform 3s ease-out;
+}
+
+.table-container.visible {
+opacity: 1;
+transform: translateY(0);
+}
+.hero-image, .other-section-image {
+  background-size: cover; /* Copre l'intera area del contenitore */
+  background-position: center; /* Centra l'immagine */
+  background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
+  width: 100%;
+  height: 100vh; /* Esempio: altezza dell'intera finestra */
+}
+
+/* Media query per schermi molto grandi */
+@media (min-width: 1600px) {
+.navbar-brand {
+    font-size: 7em; /* Ingrandisce il nome del brand */
+}
+.navbar-nav .nav-link {
+    font-size: 2.5em; /* Ingrandisce i link della navbar */
+    padding: 1rem; /* Aumenta il padding per i link */
+}
+.navbar-collapse.show {
+    padding: 2rem; /* Aumenta il padding per la navbar quando è espansa */
+}
+.navbar {
+    padding: 1.5rem 2rem; /* Aumenta il padding generale della navbar */
+}
+.navbar-brand img {
+    width: 400px; /* Modifica la larghezza del logo */
+    height: auto; /* Mantiene le proporzioni del logo */
+}
+}
+
+  .footer-text-i{
+    font-family: "PT Serif", serif;
+      font-weight: 400;
+      font-style: normal;
+      color: #103a6d;
+  }
+  .custom-a{
+    border-bottom: 1px solid #103a6d;
+    color:#103a6d;
+    font-family: "PT Serif", serif;
+    font-size: 1rem; /* Dimensione ancora più grande, adatta a piacimento */
+    text-decoration: none;
+  
+  }
+  
+  
+/* FINE INFORMAZIONI GENERALI */
+/* INIZIO HEADER */
+
+
+/* Stili base per i titoli */
+.home-header {
+  font-family: "Meddon", cursive;
+  color:#103a6d;
+  font-size: 3rem; /* Parti da una dimensione grande per schermi larghi */
+  text-align: center;
+  margin-top: 50px;
+}
+
+.home-header-pt {
+  font-family: "PT Serif", serif;
+  font-size: 4rem; /* Dimensione ancora più grande, adatta a piacimento */
+  color: white;
+}
+
+  
+  /* Media queries per adattare le dimensioni del testo sui dispositivi più piccoli */
+  @media (max-width: 991px) {
+    .home-header {
+      font-size: 2.5rem; /* Riduci la dimensione per tablet */
+    }
+    .home-header-pt {
+      font-size: 3.5rem; /* Riduci la dimensione per tablet */
+    }
+    .hero-image {
+      height: 65vh; /* Potrebbe essere necessario ridurre l'altezza per i tablet */
+    }
+    .hero-text {
+      top: 55%; /* Aumenta se necessario per spostare il testo verso il basso */
+      position: relative;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .home-header {
+      font-size: 2rem; /* Riduci ulteriormente la dimensione per dispositivi mobili */
+    }
+    .home-header-pt {
+      font-size: 2.5rem; /* Riduci ulteriormente la dimensione per dispositivi mobili */
+    }
+    .hero-image {
+      height: 55vh; /* Potrebbe essere necessario ridurre ulteriormente l'altezza per i dispositivi mobili */
+    }
+    .hero-text {
+      top: 55%; /* Continua ad aggiustare finché non è al di sotto della navbar */
+      position: relative;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .home-header {
+      font-size: 1.5rem; 
+    }
+    .home-header-pt {
+      font-size: 1rem; 
+    }
+ 
+    .hero-text {
+      margin-bottom: 10px;
+      
+    }
+    }
+    
+
+/* FINE HEADER */  
+
+
+
+  
+  
+  /* Regolazioni per la responsività */
+  @media (max-width: 768px) {
+    .reservation-form {
+      padding: 10px; /* Riduci il padding su schermi piccoli */
+    }
+    .decorative-image {
+        max-width: 50px; /* Riduci la larghezza massima su schermi medi */
+      }
+      .vettore {
+        position: absolute;
+        width: 130px;
+      
+      }
+      
+      .angolo-top-sinistra {
+        top: 0;
+        left: 2%;
+      }
+      
+      .angolo-top-destra {
+        top: 0;
+        right: 2%;
+      }
+      
+      .angolo-bottom-sinistra {
+        bottom: 0;
+        left: 2%;
+      }
+      
+      .angolo-bottom-destra {
+        bottom: 0;
+        right: 2%;
+      }
+  
+    .form-control, .btn-outline {
+      width: 100%; /* Input e bottone a piena larghezza */
+      border-bottom: 1px solid white; /* Linea sotto più sottile */
+    }
+  }
+  @media (max-width: 480px) {
+ 
+    .vettore {
+      position: absolute;
+      width: 100px;
+    
+    }
+    
+    .angolo-top-sinistra {
+      top: 0;
+      left: 5%;
+    }
+    
+    .angolo-top-destra {
+      top: 0;
+      right: 5%;
+    }
+    
+    .angolo-bottom-sinistra {
+      bottom: 0;
+      left: 5%;
+    }
+    
+    .angolo-bottom-destra {
+      bottom: 0;
+      right: 5%;
+    }
+    
+  }
+  /* Fine sessione prenota il tuo tavolo */
+
+
+
+
+
+
+  /* inizio section contatti */
+  /* inizio section contatti */
+@media (max-width: 768px) {
+  .info-area { /* Assume this is the class of the contact info container */
+    margin-bottom: 1rem; /* Adds space above the map */
+  }
+
+  .map-area-2 iframe {
+    width: 100%; /* Full width for tablet size */
+    aspect-ratio: 1 / 1; /* Maintains the aspect ratio */
+    margin-top: 2rem; /* Adjust this value as needed to add space above the iframe */
+    border: 0; /* Removes the border, if present */
+  }
+}
+
+/* Stili per mobile più piccoli, come telefoni */
+@media (max-width: 480px) {
+  .map-area-2 {
+    display: none; /* Hide the iframe on very small devices */
+  }
+}
+/* fine section contatti */
+
+  /* fine section contatti */
+
+
+ /* Stile generale del footer */
+footer {
+  padding: 20px;
+  background-color: #f8f9fa; /* bg-body-tertiary */
+  color: #6c757d; /* text-muted */
+  }
+  
+  footer .section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  }
+  
+  footer .section .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+  
+  footer .section .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+  }
+  
+  footer .section .col {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+  text-align: center; /* Centra il testo in ogni colonna */
+  }
+  
+  footer .section h6 {
+  font-weight: bold;
+  margin-bottom: 15px;
+  }
+  
+  footer .section p {
+  margin: 0 0 10px;
+  }
+  
+  footer .section a {
+  color: inherit;
+  text-decoration: none;
+  }
+  
+  footer .section a:hover {
+  text-decoration: underline;
+  }
+  
+  footer .social-media {
+  margin: 20px 0;
+  text-align: center;
+  }
+  
+  footer .social-media a {
+  margin: 0 10px; /* Ridotto margine per schermi più piccoli */
+  color: #c7ab57;
+  display: inline-block; /* Assicura che le icone siano in linea */
+  }
+  
+  footer .social-media a:hover {
+  color: #6c757d;
+  }
+  
+  /* Design responsive */
+  @media (max-width: 768px) {
+  footer .section .row {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  footer .section .col {
+      min-width: 100%;
+  }
+  }
+  
+  @media (max-width: 480px) {
+  footer .section .row {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  footer .section .col {
+      min-width: 100%;
+      text-align: center;
+  }
+  
+  footer .section p {
+      word-break: break-word; /* Evita che il testo esca dal container */
+  }
+  
+  .social-media {
+      display: flex;
+      justify-content: center;
+  }
+  }
+  /* Design per schermi molto grandi */
+  @media (min-width: 1600px) {
+  footer {
+      padding: 60px 100px; /* Aumenta il padding per schermi molto grandi */
+  }
+  
+  footer .section {
+      flex-direction: row; /* Dispone le sezioni in fila */
+      justify-content: space-between; /* Spazia le sezioni */
+      text-align: left; /* Allinea il testo a sinistra */
+  }
+  
+  footer .section .container {
+      max-width: 2200px; /* Aumenta la larghezza del container */
+  }
+  
+  footer .section .row {
+      display: flex;
+      flex-wrap: nowrap; /* Impedisce il wrap delle colonne */
+      justify-content: space-between; /* Spazia le colonne */
+  }
+  
+  footer .section .col {
+      flex: 0 0 30%; /* Aumenta la larghezza delle colonne */
+      margin: 20px; /* Aumenta il margine tra le colonne */
+      text-align: left; /* Allinea il testo a sinistra */
+  }
+  
+  footer .section h6 {
+      font-size: 2.5em; /* Aumenta la dimensione del font per i titoli */
+      margin-bottom: 20px; /* Aumenta lo spazio sotto i titoli */
+  }
+  
+  footer .section p {
+      font-size: 1.9em; /* Aumenta la dimensione del font per i paragrafi */
+  }
+  
+  footer .social-media {
+      margin: 90px 0; /* Aumenta il margine per la sezione social media */
+      display: flex;
+      justify-content: center; /* Centra le icone social */
+  }
+  
+  footer .social-media a {
+      margin: 0 20px; /* Aumenta il margine tra le icone social */
+      font-size: 2em; /* Aumenta la dimensione delle icone social */
+  }
+  }
+  /* fine footer */
+  
+  
+  @media (max-width: 991px) {
+  }
+  .footer-text-i{
+  font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #24aaf3;
+  }
+  
+  .social-media {
+  margin: 20px 0;
+  text-align: center;
+  }
+  
+  .social-media a {
+  margin: 0 10px; /* Ridotto margine per schermi più piccoli */
+  color: #c7ab57;
+  display: inline-block; /* Assicura che le icone siano in linea */
+  }
+  
+  .social-media a:hover {
+  color: #6c757d;
+  }
+  
+  /* Media query per schermi molto grandi */
+  @media (min-width: 2560px) {
+  /* Ingrandisce i testi della sezione story */
+  .story-section h2 {
+      font-size: 4rem; /* Ingrandisce i titoli */
+  }
+  .story-section p {
+      font-size: 2rem; /* Ingrandisce il testo dei paragrafi */
+  }
+  
+  /* Ingrandisce i bottoni */
+  .btn-primary, .btn-mare {
+      font-size: 2rem; /* Ingrandisce il testo dei bottoni */
+      padding: 20px 40px; /* Aumenta il padding dei bottoni */
+  }
+  
+  /* Ingrandisce altri testi specifici */
+  .home-header {
+      font-size: 5rem; /* Ingrandisce il testo dell'intestazione */
+  }
+  .home-header-pt {
+      font-size: 6rem; /* Ingrandisce il testo dell'intestazione */
+  }
+  }
+  
+/* Media query per schermi molto grandi */
+/* Media query per schermi molto grandi */
+@media (min-width: 2500px) {
+  .footer-container .section p, 
+  .footer-container .section h6,
+  .footer-container .section a,
+  .footer-container .section iframe,
+  .footer-container .section img,
+  .footer-container .section .footer-contacts {
+    font-size: 2rem; /* Ingrandisce il testo */
+  }
+
+  .footer-container .section .map-area-2 iframe {
+    width: 800px; /* Modifica la larghezza della mappa */
+    height: 600px; /* Modifica l'altezza della mappa */
+  }
+
+  .footer-container .section .img-fluid {
+    max-height: 900px; /* Ingrandisce l'immagine */
+  }
+
+  .footer-container .section .footer-contacts .hours {
+    font-size: 2rem; /* Ingrandisce il testo degli orari */
+  }
+
+  .footer-container .section .footer-text-i {
+    font-size: 2.5rem; /* Ingrandisce il testo delle intestazioni */
+  }
+}

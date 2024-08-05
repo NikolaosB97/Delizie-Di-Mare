@@ -1,0 +1,575 @@
+/* INIZIO INFORMAZIONI GENERALI */
+.meddon-regular {
+    font-family: "Meddon", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .pt-serif-regular {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .solid-bg {
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .navbar-collapse.show {
+    background-color: white;
+    padding: 1rem;
+}
+.text-color{
+  color: black;
+}
+/* Aggiungi questo nel tuo file style.css */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+  .footer-text-i{
+    font-family: "PT Serif", serif;
+      font-weight: 400;
+      font-style: normal;
+      color: #24aaf3;
+  }
+  .custom-a{
+    border-bottom: 1px solid #24aaf3 ;
+    color:#24aaf3;
+    font-family: "PT Serif", serif;
+    font-size: 1rem; /* Dimensione ancora più grande, adatta a piacimento */
+    text-decoration: none;
+  
+  }
+  .home-header {
+    font-family: "Meddon", cursive;
+    color: #24aaf3;
+    font-size: 2rem; /* Parti da una dimensione grande per schermi larghi */
+  }
+  .home-header-pt {
+    font-family: "PT Serif", serif;
+    font-size: 2rem; /* Dimensione ancora più grande, adatta a piacimento */
+    color: white;
+  }
+  
+/* FINE INFORMAZIONI GENERALI */
+/* INIZIO HEADER */
+
+/* Imposta lo sfondo per essere sempre coprente e centrato */
+/* Imposta lo sfondo per essere sempre coprente e centrato */
+.hero-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; /* Regola l'altezza a tuo piacimento */
+  
+
+}
+
+/* Stili base per i titoli */
+.home-header {
+  font-family: "Meddon", cursive;
+  color:#103a6d;
+  font-size: 3rem; /* Parti da una dimensione grande per schermi larghi */
+  text-align: center;
+  position: relative;
+top: 30%;
+}
+
+.home-header-pt {
+  font-family: "PT Serif", serif;
+  font-size: 4rem; /* Dimensione ancora più grande, adatta a piacimento */
+  color: white;
+}
+.margin-top{
+  margin-bottom: 3rem;
+}
+  
+  /* Media queries per adattare le dimensioni del testo sui dispositivi più piccoli */
+  @media (max-width: 991px) {
+    .home-header {
+      font-size: 2.5rem; /* Riduci la dimensione per tablet */
+    }
+    .home-header-pt {
+      font-size: 3.5rem; /* Riduci la dimensione per tablet */
+    }
+    .hero-image {
+      height: 100vh!important; /* Potrebbe essere necessario ridurre l'altezza per i tablet */
+    }
+    .hero-text {
+      top: 15%!important; /* Aumenta se necessario per spostare il testo verso il basso */
+      position: relative;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .home-header {
+      font-size: 2rem; /* Riduci ulteriormente la dimensione per dispositivi mobili */
+    }
+    .home-header-pt {
+      font-size: 2.5rem; /* Riduci ulteriormente la dimensione per dispositivi mobili */
+    }
+    .hero-image {
+      height: 55vh; /* Potrebbe essere necessario ridurre ulteriormente l'altezza per i dispositivi mobili */
+    }
+    .hero-text {
+      top: 55%; /* Continua ad aggiustare finché non è al di sotto della navbar */
+      position: relative;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .home-header {
+      font-size: 1.5rem; 
+    }
+    .home-header-pt {
+      font-size: 1rem; 
+    }
+    .hero-image {
+      height: 70vh;
+    }
+    .hero-text {
+      top: 25%; 
+      position: relative;
+    }
+  
+    }
+    
+  
+  
+  
+
+/* FINE HEADER */  
+ /* CSS per il video di sfondo */
+ .video-background {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Assicurati che il video sia dietro a tutti gli altri contenuti */
+  filter: brightness(0.7); /* Puoi regolare la luminosità del video se necessario */
+}
+
+/* Assicurati che il contenuto sia posizionato correttamente sopra il video */
+.products-section {
+  position: relative;
+  overflow: hidden; /* Assicurati che il video non esca dalla sezione */
+}
+
+.products-content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+.story-section {
+    padding: 4rem 0; /* Aggiungi spazio sopra e sotto */
+  }
+  
+  .story-section h2 {
+    font-size: 2rem; /* o la dimensione desiderata */
+    color: black; /* o il colore del tema */
+    font-family: "PT Serif", serif;
+    font-size: 2rem; /* Dimensione ancora più grande, adatta a piacimento */
+  }
+  
+  .story-section p {
+    font-size: 1rem; /* o la dimensione desiderata */
+    color: #666; /* o il colore del testo desiderato */
+    line-height: 1.5; /* Spaziatura delle righe per una migliore leggibilità */
+  }
+  
+  .story-section .btn-primary {
+    background-color: #24aaf3; /* Colore del pulsante */
+    border-color: #24aaf3; /* Colore del bordo del pulsante */
+    color: white; /* Colore del testo del pulsante */
+    /* Altri stili del pulsante come necessario */
+  }
+  
+  .custom-a{
+    border-bottom: 1px solid #24aaf3 ;
+    color:#24aaf3;
+    font-family: "PT Serif", serif;
+    font-size: 1rem; /* Dimensione ancora più grande, adatta a piacimento */
+    text-decoration: none;
+  
+  }
+  .story-h2 {
+    font-size: 2rem;
+  }
+  
+  .story-h2 .home-header {
+    margin-left: 10px; /* Aggiunge uno spazio tra "Pesce" e "surgelato" */
+    font-size: 2rem; /* Assicurati che la dimensione del font sia la stessa */
+    font-weight: normal;
+  }
+  
+  
+  
+  /* Responsività per tablet */
+  @media (max-width: 991px) {
+    .story-section .btn-primary {
+      padding: .5rem 1rem; /* Pulsante più piccolo per adattarsi meglio ai tablet */
+      font-size: .8rem; /* Riduzione della dimensione del testo sul pulsante */
+    }
+  }
+  
+  /* Responsività per dispositivi mobili */
+  @media (max-width: 768px) {
+    .story-section {
+      padding: 1rem .5rem; /* Minore spaziatura per una visualizzazione più ristretta */
+    }
+    
+    .story-section h2 {
+      font-size: 1.5rem; /* Riduci ulteriormente la dimensione del testo */
+      margin-bottom: .5rem; /* Minore spazio sotto l'intestazione */
+    }
+  
+    /* Adattamenti per la colonna dell'immagine */
+    .story-section .col-lg-6 {
+      display: block; /* Mostra la colonna se precedentemente nascosta */
+      max-width: 100%; /* Usa la massima larghezza disponibile */
+      margin-bottom: 1rem; /* Aggiungi spazio sotto l'immagine */
+    }
+    
+    .story-section img {
+      width: 100%; /* Le immagini devono essere a larghezza piena */
+      height: auto; /* Mantieni l'altezza automatica per conservare le proporzioni */
+    }
+  }
+  
+  /* Responsività per schermi molto piccoli come quelli di smartphone */
+  @media (max-width: 576px) {
+    .story-section {
+      padding: .5rem; /* Ancora minore spaziatura per schermi molto piccoli */
+    }
+    
+    .story-section h2 {
+      font-size: 1.25rem; /* Ulteriore riduzione della dimensione del testo */
+    }
+  
+    .story-section .btn-primary {
+      padding: .4rem .8rem; /* Riduci il padding del pulsante */
+      font-size: .75rem; /* Diminuisci la dimensione del testo sul pulsante */
+    }
+  
+    /* Se vuoi mostrare l'immagine su schermi molto piccoli */
+    .story-section .col-lg-6 {
+      display: block; /* Assicurati che l'immagine sia visibile */
+      padding: 0; /* Rimuovi padding se presente */
+    }
+    
+  }
+  /* Stile di base per l'immagine principale */
+/* Stile di base per l'immagine */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.box {
+  position: relative;
+  width: 100%;
+  max-width: 20rem; /* Larghezza card */
+  height: 20rem; /* Altezza card */
+  margin: 1rem;
+  overflow: hidden; /* Per assicurare che le immagini non escano dal contenitore */
+  border-radius: 25px; /* Bordo arrotondato */
+}
+
+.imgBox {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden; /* Nasconde l'eventuale fuoriuscita dell'immagine */
+}
+
+.imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Adatta l'immagine al contenitore mantenendo le proporzioni */
+  /* border-radius: 25px; Rimuovi questa linea se non necessario */
+  border: 2px solid #103a6d; /* Esempio di bordo con colore */
+}
+.wine-card {
+  position: relative;
+  width: 100%;
+  max-width: 20rem;
+  height: 30rem;
+  margin: 1rem;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wine-imgBox {
+  width: 100%;
+  height: 80%;
+  background-image: url('img-deliziedimare/babbio.png');
+  background-size: cover; /* Adatta l'immagine all'intero contenitore */
+  background-position: center; /* Centra l'immagine nel contenitore */
+  background-repeat: no-repeat;
+}
+
+.wine-content {
+  padding: 1rem;
+  text-align: center;
+  background-color: #fff;
+  height: 20%;
+}
+
+.wine-content h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.wine-content span {
+  font-size: 1rem;
+  color: #666;
+}
+.content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.box:hover .content {
+  opacity: 1;
+}
+.content h2 {
+  font-size: 1.5rem;
+  color: #111;
+  font-weight: 500;
+  margin: 0;
+}
+.content span {
+  color: #555;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+
+
+
+
+
+  
+  /* FINE SESSIONE STORY */
+   /* inizio footer */
+/* Stile generale del footer */
+footer {
+  padding: 20px;
+  background-color: #f8f9fa; /* bg-body-tertiary */
+  color: #6c757d; /* text-muted */
+}
+
+footer .section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+footer .section .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .section .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+footer .section .col {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+  text-align: center; /* Centra il testo in ogni colonna */
+}
+
+footer .section h6 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+footer .section p {
+  margin: 0 0 10px;
+}
+
+footer .section a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer .section a:hover {
+  text-decoration: underline;
+}
+
+footer .social-media {
+  margin: 20px 0;
+  text-align: center;
+}
+
+footer .social-media a {
+  margin: 0 10px; /* Ridotto margine per schermi più piccoli */
+  color: #c7ab57;
+  display: inline-block; /* Assicura che le icone siano in linea */
+}
+
+footer .social-media a:hover {
+  color: #6c757d;
+}
+
+/* Design responsive */
+@media (max-width: 768px) {
+  footer .section .row {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  footer .section .col {
+      min-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  footer .section .row {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  footer .section .col {
+      min-width: 100%;
+      text-align: center;
+  }
+
+  footer .section p {
+      word-break: break-word; /* Evita che il testo esca dal container */
+  }
+  
+  .social-media {
+      display: flex;
+      justify-content: center;
+  }
+ 
+  
+}
+/* Design per schermi molto grandi */
+@media (min-width: 1600px) {
+  footer {
+      padding: 60px 100px; /* Aumenta il padding per schermi molto grandi */
+  }
+
+  footer .section {
+      flex-direction: row; /* Dispone le sezioni in fila */
+      justify-content: space-between; /* Spazia le sezioni */
+      text-align: left; /* Allinea il testo a sinistra */
+  }
+
+  footer .section .container {
+      max-width: 2200px; /* Aumenta la larghezza del container */
+  }
+
+  footer .section .row {
+      display: flex;
+      flex-wrap: nowrap; /* Impedisce il wrap delle colonne */
+      justify-content: space-between; /* Spazia le colonne */
+  }
+
+  footer .section .col {
+      flex: 0 0 30%; /* Aumenta la larghezza delle colonne */
+      margin: 20px; /* Aumenta il margine tra le colonne */
+      text-align: left; /* Allinea il testo a sinistra */
+  }
+
+  footer .section h6 {
+      font-size: 2.5em; /* Aumenta la dimensione del font per i titoli */
+      margin-bottom: 20px; /* Aumenta lo spazio sotto i titoli */
+  }
+
+  footer .section p {
+      font-size: 1.9em; /* Aumenta la dimensione del font per i paragrafi */
+  }
+
+  footer .social-media {
+      margin: 90px 0; /* Aumenta il margine per la sezione social media */
+      display: flex;
+      justify-content: center; /* Centra le icone social */
+  }
+
+  footer .social-media a {
+      margin: 0 20px; /* Aumenta il margine tra le icone social */
+      font-size: 2em; /* Aumenta la dimensione delle icone social */
+  }
+}
+/* fine footer */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animated-section-left .col-md-6,
+.animated-section-right .col-md-6 {
+  opacity: 0; /* Nasconde gli elementi inizialmente */
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.animated-section-left.visible .col-md-6 {
+  opacity: 1;
+  animation: slideInLeft 1s ease-out forwards;
+}
+
+.animated-section-right.visible .col-md-6 {
+  opacity: 1;
+  animation: slideInRight 1s ease-out forwards;
+}
+@media (min-width: 2560px) {
+  .box {
+    max-width: 30rem; /* Aumenta la larghezza delle card per schermi grandi */
+    margin: 1.5rem; /* Aumenta lo spazio intorno alle card */
+  }
+
+  .fixed-size-img {
+    max-height: 400px; /* Aumenta l'altezza massima delle immagini */
+  }
+
+  .content h2 {
+    font-size: 1.5rem; /* Aumenta la dimensione del font del titolo */
+  }
+.story-h2{
+  font-size: 2.5rem;
+}
+}
